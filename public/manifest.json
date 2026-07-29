@@ -1,58 +1,27 @@
 {
-  "id": "/",
-  "name": "بوابة الغد - منظومات الطاقة الشمسية والإنترنت الضوئي",
   "short_name": "بوابة الغد",
-  "description": "التطبيق الرسمي لمكتب بوابة الغد لخدمات الطاقة الشمسية والإنترنت الضوئي والشبكات الذكية في العراق.",
+  "name": "بوابة الغد",
+  "description": "مكتب بوابة الغد - تفعيل واشتراكات إنترنت الوطني الضوئي الأسرع والأكثر استقراراً، باقات شحن الرصيد، وأحدث أجهزة الراوترات ومقويات الإشارة وأجهزة ONU.",
+  "id": "/",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#0f172a",
-  "theme_color": "#f59e0b",
+  "orientation": "any",
   "dir": "rtl",
-  "lang": "ar-IQ",
-  "categories": ["business", "shopping", "utilities"],
-  "prefer_related_applications": false,
+  "theme_color": "#f59e0b",
+  "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "https://zffy96.github.io/icon-192.png",
+      "type": "image/png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
+      "src": "https://zffy96.github.io/icon-512.png",
       "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/screenshot-mobile.png",
-      "sizes": "540x960",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "الشاشة الرئيسية للتطبيق"
-    },
-    {
-      "src": "/screenshot-desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "عرض التطبيق على شاشة الكمبيوتر"
+      "purpose": "any maskable"
     }
   ]
 }

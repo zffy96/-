@@ -2,12 +2,35 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>مكتب بوابة الغد - خدمات الإنترنت الضوئي والشبكات الذكية</title>
     <meta name="description" content="مكتب بوابة الغد - تفعيل واشتراكات إنترنت الوطني الضوئي الأسرع والأكثر استقراراً، باقات شحن الرصيد، وأحدث أجهزة الراوترات ومقويات الإشارة وأجهزة ONU." />
+    
+    <!-- PWA Primary Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="بوابة الغد" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
   <body class="bg-slate-50 text-slate-900 overflow-x-hidden antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered successfully:', registration.scope);
+            })
+            .catch((err) => {
+              console.log('SW registration failed:', err);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

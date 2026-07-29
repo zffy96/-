@@ -11,6 +11,7 @@ import AiChat from "./components/AiChat";
 import SolarSection from "./components/SolarSection";
 import Contracting from "./components/Contracting";
 import QrCodeModal from "./components/QrCodeModal";
+import PWAInstallPrompt from "./components/PWAInstallPrompt";
 import { Package, Product } from "./types";
 import { faqList, products } from "./data";
 import { 
@@ -96,6 +97,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans overflow-x-hidden w-full max-w-full">
+      {/* PWA Install Notification Bar */}
+      <PWAInstallPrompt />
+
       {/* Dynamic Header & Navigation */}
       <Header 
         activeTab={activeTab} 
